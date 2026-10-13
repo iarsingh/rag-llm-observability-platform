@@ -1,5 +1,12 @@
 # RAG + LLM Observability Platform
 
+## Overview
+
+An observability exercise for RAG and LLM pipelines that reports retrieval hit rates. Records sent to `POST /analyze` carry a `pipeline` name and a `hit` value, and the service summarizes hits grouped by pipeline so retrieval quality can be compared across pipelines. It runs locally on records supplied in the request and does not call a hosted model.
+
+- **Built with:** Python, pytest, GitHub Actions
+- **Scope:** LLMOps exercise run locally; it summarizes supplied records and does not apply production changes.
+
 <!-- project-guide:start -->
 ## Project guide
 
